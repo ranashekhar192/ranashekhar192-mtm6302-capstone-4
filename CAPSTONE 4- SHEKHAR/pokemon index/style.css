@@ -1,0 +1,114 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #eaeaea;
+}
+
+header {
+    background-color: #0a2f48;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(65, 69, 183, 0.2);
+}
+
+header .logo {
+    height: 60px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    background-color: #a3d9bf;
+    color: #fff;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea, form button {
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color: #6db196;
+    transform: scale(1.05);
+}
+
+.apod-card, .favourite-card {
+    border: 1px solid #3e8da0;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.apod-card img, .favourite-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.apod-card button, .favourite-card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #efb6c4;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
